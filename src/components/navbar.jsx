@@ -1,5 +1,6 @@
 import { useState } from "react";
 
+
 export const Navbar = () => {
 
 
@@ -42,26 +43,3 @@ export const Navbar = () => {
     </nav>
   );
 };
-{/* <button className="cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none" type="button">
-        <span className="block relative w-6 h-px rounded-sm bg-white"></span>
-        <span className="block relative w-6 h-px rounded-sm bg-white mt-1"></span>
-        <span className="block relative w-6 h-px rounded-sm bg-white mt-1"></span>
-      </button>
-       <div className="lg:flex flex-grow items-center" id="example-navbar-warning">
-       <ul className="flex flex-col lg:flex-row list-none mr-auto">
-         <li className="nav-item">
-           <a className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-white hover:opacity-75" href="#pablo">
-             <i className="fab fa-facebook-square text-lg leading-lg text-white opacity-75" /> 
-           </a>
-         </li>
-         <li className="nav-item">
-           <a className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-white hover:opacity-75" href="#pablo">
-             <i className="fab fa-twitter text-lg leading-lg text-white opacity-75" /> <span className="ml-2">Tweet</span>
-           </a>
-         </li>
-         <li className="nav-item">
-           <a className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-white hover:opacity-75" href="#pablo">
-             <span className="ml-2">Settings</span>
-           </a>
-         </li>
-       </ul> */}
