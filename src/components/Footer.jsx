@@ -3,7 +3,7 @@
 export const Footer = () => {
   return (
 
-    <footer className=" bg-orange-200">
+    <footer className=" bg-alba fixed-bottom">
       <div className="mx-auto w-full container">
         <div className="grid grid-cols-2 gap-8 px-6 py-8 md:grid-cols-4">
           <div>
@@ -55,7 +55,7 @@ export const Footer = () => {
         </div>
 
       </div>
-      <div className="px-4 py-6 bg-orange-300 md:flex items-center justify-between">
+      <div className="px-4 py-6 bg-orange md:flex items-center justify-between">
         <span className="text-sm text-black sm:text-center ml-3">© 2023 <a href="">Blossom</a> | All Rights Reserved.</span>
 
         <div className="flex mt-4 space-x-6 sm:justify-center md:mt-0 mr-3">
