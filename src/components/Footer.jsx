@@ -3,7 +3,7 @@
 export const Footer = () => {
   return (
 
-    <footer className=" bg-alba fixed-bottom">
+    <footer className=" bg-alba">
       <div className="mx-auto w-full container">
         <div className="grid grid-cols-2 gap-8 px-6 py-8 md:grid-cols-4">
           <div>
