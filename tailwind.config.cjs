@@ -9,6 +9,7 @@ module.exports = {
       'rose-secondary':'#E7A0AE',
       'orange':'#E5A579',
       'white':'#FFFFFF',
+      'alba':'#D2A794',
     },
   },
   plugins: [],
