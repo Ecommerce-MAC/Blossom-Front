@@ -1,21 +1,14 @@
-import { Navbar } from "../components/Navbar";
-import { Footer } from "../components/Footer";
 
-
-function Home() {
+const Home = () => {
+   
     return (
-        <>
-            <Container fluid>
-                <Navbar></Navbar>
-                <Carrousel>
-            
-                </Carrousel>
+<>
                 
-                <Footer></Footer>
-            </Container>
-
-        </>
-
+    <h2 className="title">ESTA ES LA PAGINA DE INICIO</h2>
+           
+                
+            
+                </>
     )
-}
-export default Home
+};
+export default Home;
