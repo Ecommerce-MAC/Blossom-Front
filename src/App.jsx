@@ -1,19 +1,11 @@
-import { Footer } from './components/Footer'
-import { Navbar } from "./components/Navbar"
-import Nav from "./components/Nav"
-import Slide from "./components/Slide"
-import BrandList from "./components/BrandList"
+import Root from './Router/Root';
 
 function App() {
   return (
-    <>
-     <Navbar/>
-      <Nav/>
-      <Slide />
-      <BrandList/>
-      
-     <Footer/>
-    </>
+    <div className='App'>
+         <Root style={{ background: '#F2CC49' }}></Root>
+
+      </div>
   )
 }
 

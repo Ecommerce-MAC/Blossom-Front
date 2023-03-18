@@ -1,5 +1,6 @@
  import { useState } from "react";
 
+
 export default function Nav() {
     const [navbar, setNavbar] = useState(false);
 
@@ -58,19 +59,20 @@ export default function Nav() {
                                 <a href="">Home</a>
                             </li>
                             <li className="">
-                                <a href="">Cosmetics</a>
+                                <a href="/ProductList">Cosmetics</a>
                             </li>
                             <li>
-                                <a href="">Soaps</a>
+                                <a href="/ProductList">Soaps</a>
                             </li>
                             <li>
-                                <a href="">Aromatherapy</a>
+
+                                <a href="/ProductList">Aromatherapy</a>
                             </li>
                             <li>
-                                <a href="">Hair</a>
+                                <a href="/ProductList">Hair</a>
                             </li>
                             <li>
-                                <a href="">Accessories</a>
+                                <a href="/ProductList">Accessories</a>
                             </li>
                         </ul>
 
