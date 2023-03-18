@@ -4,6 +4,7 @@ import Nav from "../components/Nav"
 import Slide from "../components/Slide"
 import BrandList from "../components/BrandList"
 import { Outlet, useNavigation } from "react-router-dom";
+import '../index.css'
 
 function Root() {
     const navigation = useNavigation()

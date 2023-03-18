@@ -7,15 +7,16 @@ import CartView from "../pages/CartView";
 import ProductList from "../pages/ProductList";
 import UploadProduct from "../pages/UploadProduct";
 import AdminView from "../pages/AdminView";
+import NotFound from "../pages/NotFound";
 
 export const router = createBrowserRouter([
     {
         path: '/',
         element: <Root />,
-       
+        errorElement: <NotFound />,
         children: [
             {
-    
+                errorElement: <NotFound />,
                 children: [
                     {
                         index: true,
