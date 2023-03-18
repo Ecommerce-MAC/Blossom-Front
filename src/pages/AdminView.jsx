@@ -1,10 +1,9 @@
+import PopLogin from '../components/PopLogin'
 function Admin() {
 
-    return (
-        <div>
-           <h1>esta es la pagina admin</h1>
-        </div>
-    );
+<PopLogin></PopLogin>
+   
 }
+
 
 export default Admin;

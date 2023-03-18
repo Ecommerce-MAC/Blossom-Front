@@ -12,5 +12,7 @@ module.exports = {
       'alba':'#D2A794',
     },
   },
-  plugins: [],
+  plugins: [
+    '@tailwindcss/forms'
+  ],
 }

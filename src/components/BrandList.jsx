@@ -1,7 +1,7 @@
 import ecoverde from "../assets/Img-brand/Ecoverde.png"
 import juice from "../assets/Img-brand/juice.png"
 import kiko from "../assets/Img-brand/kiko.png"
-
+import fabiola from "../assets/Img-brand/fabiola.png"
 import ziaja from "../assets/Img-brand/ziaja.png"
 
 export default function Brand() {
@@ -33,13 +33,13 @@ export default function Brand() {
               width={158}
               height={48}
             />
-            {/* <img
+             <img
               className="col-span-2 max-h-12 w-full object-contain sm:col-start-2 lg:col-span-1"
               src={fabiola}
               alt="SavvyCal"
               width={158}
               height={48}
-            />  */}
+            />  
             <img
               className="col-span-2 col-start-2 max-h-12 w-full object-contain sm:col-start-auto lg:col-span-1"
               src={ziaja}

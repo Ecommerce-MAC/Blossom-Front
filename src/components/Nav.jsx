@@ -56,7 +56,7 @@ export default function Nav() {
 
                         <ul className=" space-y-8 md:flex md:space-x-6 md:space-y-0 text-white gap-20 text-lg font-light">
                             <li className="">
-                                <a href="">Home</a>
+                                <a href="/">Home</a>
                             </li>
                             <li className="">
                                 <a href="/ProductList">Cosmetics</a>
@@ -72,7 +72,7 @@ export default function Nav() {
                                 <a href="/ProductList">Hair</a>
                             </li>
                             <li>
-                                <a href="/ProductList">Accessories</a>
+                                <a href="/AdminView">AdminView</a>
                             </li>
                         </ul>
 
