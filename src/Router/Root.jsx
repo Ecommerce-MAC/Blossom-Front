@@ -1,5 +1,5 @@
 import { Footer } from '../components/Footer'
-import { Navbar } from "../components/Navbar"
+import  Navbar  from "../components/Navbar"
 import Nav from "../components/Nav"
 
 import BrandList from "../components/BrandList"
@@ -17,7 +17,7 @@ function Root() {
                     <div className="alert alert-info my-S">Loading...</div>
                 )}
         <Outlet/>
-        </main>
+      </main>
       
       <BrandList/>
       

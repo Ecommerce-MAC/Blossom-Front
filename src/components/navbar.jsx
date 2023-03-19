@@ -1,6 +1,11 @@
 
-export const Navbar = () => {
+import React, { Fragment } from "react";
+import Login from "./Login"
+import Registration from "./Registration"
+import { useState } from "react";
 
+export default function Navbar ()  {
+  const [showModal, setShowModal] = useState(false);
 
   return (
     <nav className="relative flex flex-wrap items-center justify-between px-2 py-3 bg-white mb-3">
@@ -11,7 +16,6 @@ export const Navbar = () => {
             width="200"
             height="50"
             alt="logo Blossom" />
-
         </div>
 
         <form className="max-w-sm px-4">
@@ -36,6 +40,20 @@ export const Navbar = () => {
             />
           </div>
         </form>
+
+        <Fragment>
+        <div>
+           <button className= "text-green bg-blue-700 hover:bg-pink" onClick={() => setShowModal(true)}>
+            Login
+           </button>
+        </div>
+        <Login isVisible={showModal} onClose={() => setShowModal(false)}>         
+          <Registration/>
+        </Login>
+        </Fragment>
+        <button className="text-green-500 bg-blue-700 hover:bg-pink-500 px-4 py-2 rounded" onClick={() => window.location.href='/CartView'}>
+        Cart
+      </button>
       </div>
 
     </nav>
