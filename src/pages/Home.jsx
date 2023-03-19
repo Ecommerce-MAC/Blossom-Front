@@ -1,11 +1,13 @@
 import React from "react";
 import Slide from "../components/Slide"
 
+
 function Home() {
 
     return (
         <div>
            <Slide/>
+           
         </div>
     );
 }
