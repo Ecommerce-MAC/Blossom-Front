@@ -1,3 +1,4 @@
+import { useLoaderData } from "react-router-dom"
 
 const products = [
   {
@@ -36,6 +37,8 @@ const products = [
 ]
 
 export default function ProductList() {
+
+
   return (
     <div className="bg-white">
       <div className="mx-auto max-w-2xl py-16 px-4 sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8">
@@ -53,7 +56,7 @@ export default function ProductList() {
               </div>
               <h3 className="mt-4 text-sm text-gray-700">{product.name}</h3>
               <p className="mt-1 text-lg font-medium text-gray-900">{product.price}</p>
-              <button type="submit" className="block w-full rounded-md bg-indigo-600 px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
+              <button onClick={() => addToCart({})} className="block w-full rounded-md bg px-3.5 py-2.5 text-center text-sm font-semibold text-dark shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
                 ADD TO CART
               </button>
 
