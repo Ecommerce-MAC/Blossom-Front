@@ -1,5 +1,5 @@
 import { useState } from "react";
-import './UploadProduct.css';
+import '../Styles/UploadProduct.css';
 
 
 function UploadProduct() {
