@@ -73,10 +73,7 @@ export default function Example() {
             </div>
 
             <div>
-              <button
-                type="submit"
-                className="w-full text-dark bg-blue-700 hover:bg-blue-800 focus:ring-4 focus: outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text center"
-              >
+              <button type="submit"className="w-full text-dark bg-blue-700 hover:bg-blue-800 focus:ring-4 focus: outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text center">
                 <span className="absolute inset-y-0 left-0 flex items-center pl-3">
                    {/* <LockClosedIcon className="h-5 w-5 text-indigo-500 group-hover:text-indigo-400" aria-hidden="true" /> */}
                 </span> 
