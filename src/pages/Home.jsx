@@ -1,13 +1,28 @@
-import React from "react";
+import React, {useEffect, useState} from "react";
 import Slide from "../components/Slide"
+import "../pages/Home.css" 
+import { allProducts } from "../Functions/ProductServices";
+
 
 
 function Home() {
 
+    const [products, allProducts] =useState(null)
+
+    useEffect(() =>{
+        allProducts(allProducts)
+    }, [])
+
     return (
         <div>
            <Slide/>
-           
+           <div className="contenedor" > 
+
+           <h1>Esto debe de hacer otro espacio</h1> 
+
+            
+
+           </div> 
         </div>
     );
 }
