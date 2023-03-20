@@ -3,16 +3,17 @@ import { Navbar } from "./components/Navbar"
 import Nav from "./components/Nav"
 import Slide from "./components/Slide"
 
+
 function App() {
   return (
     <>
-     <Navbar/>
+      <Navbar/>
       <Nav/>
       <Slide />
       
-     <Footer/>
+     <Footer/> 
     </>
-  )
-}
+  );
+};
 
 export default App
