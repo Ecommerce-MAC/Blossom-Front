@@ -72,7 +72,7 @@ export default function Nav() {
                                 <a href="/ProductList">Hair</a>
                             </li>
                             <li>
-                                <a href="/AdminView">Accehxhrshsory</a>
+                                <a href="/UploadProduct">Accehxhrshsory</a>
                             </li>
                         </ul>
 
