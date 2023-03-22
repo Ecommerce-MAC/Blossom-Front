@@ -11,28 +11,28 @@ const apiClient = axios.create({
   
   export const ProductService = {
     async getProducts() {
-      let response = await apiClient.get("/products/getAll");
+      let response = await apiClient.get("/Product/GetAll");
       let allProducts = response.data;
       return allProducts;
   
     },
   
-    async submitProduct(newProduct) {
-      console.log("new product de servicio", newProduct);
-      await apiClient.post("/products", newProduct);
-    },
+    // async submitProduct(newProduct) {
+    //   console.log("new product de servicio", newProduct);
+    //   await apiClient.post("/products", newProduct);
+    // },
   
-    async getProduct(id) {
-      let response = await apiClient.get("/products/" + id);
-      let product = response.data;
-      return product;
-    },
+    // async getProduct(id) {
+    //   let response = await apiClient.get("/products/" + id);
+    //   let product = response.data;
+    //   return product;
+    // },
   
-    async deleteProduct(id) {
-      await apiClient.delete("/products/" + id)
-    },
-    async updateProduct(id, updatedProduct) {
-      await apiClient.patch("/products/" + id, updatedProduct)
-    }
+    // async deleteProduct(id) {
+    //   await apiClient.delete("/products/" + id)
+    // },
+    // async updateProduct(id, updatedProduct) {
+    //   await apiClient.patch("/products/" + id, updatedProduct)
+    // }
   }
   

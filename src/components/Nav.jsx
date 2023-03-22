@@ -1,4 +1,5 @@
  import { useState } from "react";
+ import {Link} from "react-router-dom";
 
 
 export default function Nav() {
@@ -54,27 +55,14 @@ export default function Nav() {
                             }`}
                     >
 
-                        <ul className=" space-y-8 md:flex md:space-x-6 md:space-y-0 text-white gap-20 text-lg font-light">
-                            <li className="">
-                                <a href="/">Home</a>
-                            </li>
-                            <li className="">
-                                <a href="/ProductList">Cosmetics</a>
-                            </li>
-                            <li>
-                                <a href="/ProductList">Soaps</a>
-                            </li>
-                            <li>
-
-                                <a href="/ProductList">Aromatherapy</a>
-                            </li>
-                            <li>
-                                <a href="/ProductList">Hair</a>
-                            </li>
-                            <li>
-                                <a href="/UploadProduct">Accehxhrshsory</a>
-                            </li>
-                        </ul>
+                        <div className=" space-y-8 md:flex md:space-x-6 md:space-y-0 text-white gap-20 text-lg font-light">
+                            <Link to= "/"> Home </Link>
+                            <Link to= "/ProductList/Soap"> Cosmetics </Link>
+                            <Link to= "/ProductList/Soap"> Soaps </Link>
+                            <Link to= "/ProductList/Aromatherapy"> Aromatherapy </Link> 
+                            <Link to= "/ProductList/Hair"> Hair </Link> 
+                            <Link to= "/ProductList/Accesories"> Accesories</Link>     
+                        </div>
 
                     </div>
                 </div>

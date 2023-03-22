@@ -8,6 +8,7 @@ import ProductList from "../pages/ProductList";
 import UploadProduct from "../pages/UploadProduct";
 import AdminView from "../pages/AdminView";
 import NotFound from "../pages/NotFound";
+import { ProductService } from "../Service/ProductService";
 
 export const router = createBrowserRouter([
     {
@@ -39,8 +40,9 @@ export const router = createBrowserRouter([
 
                     },
                     {
-                        path: '/ProductList',
+                        path: '/ProductList/:productType',
                         element: <ProductList/>,
+                        loader: fetchProducts,
                     },
                     {
                         path: '/UploadProduct',
@@ -56,3 +58,9 @@ export const router = createBrowserRouter([
     },
 ]);
 
+async function fetchProducts ({params}) {
+    const productsData = await ProductService.getProducts();
+    return {productsData, params};
+
+
+}
