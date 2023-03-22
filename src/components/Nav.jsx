@@ -54,7 +54,7 @@ export default function Nav() {
                             }`}
                     >
 
-                        <ul className=" space-y-8 md:flex md:space-x-6 md:space-y-0 text-white gap-20 text-lg font-light">
+                        <ul className="space-y-8 md:flex md:space-x-6 md:space-y-0 text-white gap-20 text-lg font-light">
                             <li className="">
                                 <a href="/">Home</a>
                             </li>

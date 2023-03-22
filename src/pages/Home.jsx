@@ -1,13 +1,13 @@
 import React from "react";
-import Slide from "../components/Slide"
+import { Navbar } from "react-bootstrap";
+import Slide from "../components/Slide";
 
 
 function Home() {
 
     return (
-        <div>
-           <Slide/>
-           
+        <div>        
+           <Slide/>            
         </div>
     );
 }
