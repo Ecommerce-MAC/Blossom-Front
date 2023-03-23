@@ -34,7 +34,7 @@ function ShoppingCart() {
       </ul>
       <p>Total: ${calculateTotal()}</p>
       <button onClick={() => setCartItems([])}>Clear Cart</button>
-      <hr />
+      {/* <hr />
       <h2>Products</h2>
       <ul>
         <li>
@@ -46,7 +46,7 @@ function ShoppingCart() {
         <li>
           Product C - $30 <button onClick={() => addToCart({ name: "Product C", price: 30 })}>Add to Cart</button>
         </li>
-      </ul>
+      </ul> */}
     </div>
   );
 }

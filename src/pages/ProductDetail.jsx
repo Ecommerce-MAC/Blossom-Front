@@ -1,15 +1,15 @@
-import { useState, useEffect } from "react";
-import ProductInfo from "../components/ProductInfo";
+// import { useState, useEffect } from "react";
+// import ProductInfo from "../components/ProductInfo";
 
 
-function ProductDetail() {
+// function ProductDetail() {
 
 
-  return (
-    <>
-      <ProductInfo></ProductInfo>
-    </>
-  );
-}
+//   return (
+//     <>
+//       <ProductInfo></ProductInfo>
+//     </>
+//   );
+// }
 
-export default ProductDetail;
+// export default ProductDetail;

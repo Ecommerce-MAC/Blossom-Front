@@ -58,10 +58,10 @@ export default function Nav() {
 
                         <div className=" space-y-8 md:flex md:space-x-6 md:space-y-0 text-white gap-20 text-lg font-light">
                             <Link to= "/"> Home </Link>
-                            <Link to= "/ProductList/Cosmetics" onClick={() => setNavbar(!productType.Cosmetics)}> Cosmetics </Link>
-                            <Link to= "/ProductList/Soap"onClick={() => setNavbar(!productType.Cosmetics)}> Soaps </Link>
-                            <Link to= "/ProductList/Aromatherapy"onClick={() => setNavbar(!productType.Cosmetics)}> Aromatherapy </Link> 
-                            <Link to= "/ProductList/Hair"onClick={() => setNavbar(!productType.Cosmetics)}> Hair </Link> 
+                            <Link to= "/ProductList/Cosmetics"> Cosmetics </Link>
+                            <Link to= "/ProductList/Soap"> Soaps </Link>
+                            <Link to= "/ProductList/Aromatherapy"> Aromatherapy </Link> 
+                            <Link to= "/ProductList/Hair"> Hair </Link> 
                             {/* <Link to= "/ProductList/Accesories"onClick={() => setNavbar(!productType.Cosmetics)}> Accesories</Link>  */}
                             {/* <Link to="/ProductList/Accessories" onClick={() => filterProducts("Accessories")}>Accessories</Link>     */}
                         </div> 
