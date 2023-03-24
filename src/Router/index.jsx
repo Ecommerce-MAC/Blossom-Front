@@ -8,7 +8,7 @@ import ProductList from "../pages/ProductList";
 import UploadProduct from "../pages/UploadProduct";
 import AdminView from "../pages/AdminView";
 import NotFound from "../pages/NotFound";
-import { ProductService } from "../Service/ProductService";
+import { productService } from "../Service/productService";
 
 export const router = createBrowserRouter([
     {
@@ -54,7 +54,7 @@ export const router = createBrowserRouter([
 ]);
 
 async function fetchProducts ({params}) {
-    const productsData = await ProductService.getProducts();
+    const productsData = await productService.getProducts();
     return {productsData, params};
 
 

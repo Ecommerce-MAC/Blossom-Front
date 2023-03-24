@@ -62,8 +62,7 @@ export default function Nav() {
                             <Link to= "/ProductList/Soap"> Soaps </Link>
                             <Link to= "/ProductList/Aromatherapy"> Aromatherapy </Link> 
                             <Link to= "/ProductList/Hair"> Hair </Link> 
-                            {/* <Link to= "/ProductList/Accesories"onClick={() => setNavbar(!productType.Cosmetics)}> Accesories</Link>  */}
-                            {/* <Link to="/ProductList/Accessories" onClick={() => filterProducts("Accessories")}>Accessories</Link>     */}
+                           
                         </div> 
 
                     </div>

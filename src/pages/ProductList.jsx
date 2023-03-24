@@ -1,4 +1,4 @@
-import { useLoaderData } from "react-router-dom";
+import { useLoaderData} from "react-router-dom";
 import React from "react";
 
 
@@ -6,8 +6,7 @@ export default function ProductList() {
   const {productsData, params} = useLoaderData ()
 
   console.log (params)
-
-  
+ 
 
   return (
      <div className="bg-white">
