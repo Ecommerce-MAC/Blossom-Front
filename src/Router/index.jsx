@@ -26,6 +26,7 @@ export const router = createBrowserRouter([
                     {
                         path: '/AdminView',
                         element: <AdminView/>,
+                        loader: fetchProducts,
                     },
                     {
                         path: "/CartView",
@@ -42,6 +43,7 @@ export const router = createBrowserRouter([
                     {
                         path: '/UploadProduct',
                         element: <UploadProduct/>,
+                        
                         
 
                     },
