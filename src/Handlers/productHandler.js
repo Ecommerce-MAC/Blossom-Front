@@ -22,21 +22,21 @@ export const productHandler = {
     deleteProduct(id){
         return productService.deleteProduct(id);
     },
-    updateProduct(id, updatedProduct){
-        if(!updatedProduct){
-            return;
-        }
-        let updatedProductStructure = {
-            "id": "",
-            "name": updateProduct.name,
-            "brand": updateProduct.brand,
-            "description": updateProduct.description,
-            "typeProduct": updateProduct.typeProduct,
-            "price": updateProduct.price,
-            "cost": updateProduct.cost,
-            "stock": updateProduct.stock,        
+    // updateProduct(id, updatedProduct){
+    //     if(!updatedProduct){
+    //         return;
+    //     }
+    //     let updatedProductStructure = {
+    //         "id": "",
+    //         "name": updateProduct.name,
+    //         "brand": updateProduct.brand,
+    //         "description": updateProduct.description,
+    //         "typeProduct": updateProduct.typeProduct,
+    //         "price": updateProduct.price,
+    //         "cost": updateProduct.cost,
+    //         "stock": updateProduct.stock,        
 
-        }
-        return productService.updateProduct(id, updatedProductStructure);
-    }
+    //     }
+    //     return productService.updateProduct(id, updatedProductStructure);
+    // }
 }
