@@ -4,9 +4,17 @@ import React from "react";
 
 export default function ProductList() {
   const {productsData, params} = useLoaderData ()
+  const cartProducts = JSON.parse(localStorage.getItem("cartProducts")) || [];
+
 
   console.log (params)
  
+const addToCart = async (product) => {
+    console.log("cart product array", cartProducts);
+    cartProducts.push(product);
+    localStorage.setItem("cartProducts", JSON.stringify(cartProducts));
+  }
+
 
   return (
      <div className="bg-white">
@@ -28,7 +36,7 @@ export default function ProductList() {
               <h3 className="mt-4 text-sm text-gray-700">{product.name}</h3>
               <h3 className="mt-4 text-sm text-gray-700">{product.typeProduct}</h3>
               <p className="mt-1 text-lg font-medium text-gray-900">{product.price}</p>
-              <button  className="block w-full rounded-md bg px-3.5 py-2.5 text-center text-sm font-semibold text-dark shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600" onClick={() => addToCart()}>
+              <button  className="block w-full rounded-md bg px-3.5 py-2.5 text-center text-sm font-semibold text-dark shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600" onClick={() => addToCart(product)}>
                 ADD TO CART
               </button>
 
