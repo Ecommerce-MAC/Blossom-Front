@@ -2,12 +2,13 @@ import { createBrowserRouter } from "react-router-dom";
 import Root from "./Root";
 
 import Home from '../pages/Home';
-import ProductDetail from "../pages/ProductDetail";
+
 import CartView from "../pages/CartView";
 import ProductList from "../pages/ProductList";
 import UploadProduct from "../pages/UploadProduct";
 import AdminView from "../pages/AdminView";
 import NotFound from "../pages/NotFound";
+import { productService } from "../Service/productService";
 
 export const router = createBrowserRouter([
     {
@@ -25,6 +26,7 @@ export const router = createBrowserRouter([
                     {
                         path: '/AdminView',
                         element: <AdminView/>,
+                        loader: fetchProducts,
                     },
                     {
                         path: "/CartView",
@@ -32,19 +34,16 @@ export const router = createBrowserRouter([
                        
 
                     },
+                  
                     {
-                        path: '/ProductDetail',
-                        element: <ProductDetail/>,
-                     
-
-                    },
-                    {
-                        path: '/ProductList',
+                        path: '/ProductList/:productType',
                         element: <ProductList/>,
+                        loader: fetchProducts,
                     },
                     {
                         path: '/UploadProduct',
                         element: <UploadProduct/>,
+                        
                         
 
                     },
@@ -56,3 +55,9 @@ export const router = createBrowserRouter([
     },
 ]);
 
+async function fetchProducts ({params}) {
+    const productsData = await productService.getProducts();
+    return {productsData, params};
+
+
+}

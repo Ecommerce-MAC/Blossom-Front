@@ -1,8 +1,10 @@
  import { useState } from "react";
+ import {Link} from "react-router-dom";
 
 
 export default function Nav() {
     const [navbar, setNavbar] = useState(false);
+    
 
     return (
         <nav className="w-full bg-orange ">
@@ -10,7 +12,7 @@ export default function Nav() {
                 <div>
                     <div className="flex items-center justify-between py-3 md:py-5 md:block">
 
-                        <div className="md:hidden ">
+                         <div className="md:hidden ">
                             <button
                                 className="p-2 text-gray-700 rounded-md outline-none focus:border-gray-400 focus:border"
                                 onClick={() => setNavbar(!navbar)}
@@ -45,7 +47,7 @@ export default function Nav() {
                                     </svg>
                                 )}
                             </button>
-                        </div>
+                        </div> 
                     </div>
                 </div>
                 <div>
@@ -54,27 +56,14 @@ export default function Nav() {
                             }`}
                     >
 
-                        <ul className=" space-y-8 md:flex md:space-x-6 md:space-y-0 text-white gap-20 text-lg font-light">
-                            <li className="">
-                                <a href="/">Home</a>
-                            </li>
-                            <li className="">
-                                <a href="/ProductList">Cosmetics</a>
-                            </li>
-                            <li>
-                                <a href="/ProductList">Soaps</a>
-                            </li>
-                            <li>
-
-                                <a href="/ProductList">Aromatherapy</a>
-                            </li>
-                            <li>
-                                <a href="/ProductList">Hair</a>
-                            </li>
-                            <li>
-                                <a href="/AdminView">AdminView</a>
-                            </li>
-                        </ul>
+                        <div className=" space-y-8 md:flex md:space-x-6 md:space-y-0 text-white gap-20 text-lg font-light">
+                            <Link to= "/"> Home </Link>
+                            <Link to= "/ProductList/Cosmetics"> Cosmetics </Link>
+                            <Link to= "/ProductList/Soap"> Soaps </Link>
+                            <Link to= "/ProductList/Aromatherapy"> Aromatherapy </Link> 
+                            <Link to= "/ProductList/Hair"> Hair </Link> 
+                           
+                        </div> 
 
                     </div>
                 </div>
