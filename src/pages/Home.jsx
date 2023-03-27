@@ -18,7 +18,7 @@ function Home() {
            <Slide/>
            <div className="contenedor" > 
 
-           <h1>Esto debe de hacer otro espacio</h1> 
+           <h1></h1> 
 
             
 
