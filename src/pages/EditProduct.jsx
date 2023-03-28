@@ -58,6 +58,11 @@ function EditProduct() {
         productHandler.updateProduct(id, updatedProduct);
     };
 
+    async function updateProduct (id, updatedProduct) {
+      await productHandler.updateProduct(id, updatedProduct)
+      console.log (id);
+    }
+
     return (
         <>
           <form className="StyleForm mt-9 p-5" onSubmit={handleSubmit}>

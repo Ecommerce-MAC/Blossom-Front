@@ -65,6 +65,6 @@ async function fetchProducts ({params}) {
 
 }
 async function fetchProduct({ params }) {
-    const product = await productService.getProduct(params.id);
+    const product = await productService.getProductById(params.id);
     return { product };
 }

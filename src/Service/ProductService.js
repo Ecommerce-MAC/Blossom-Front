@@ -16,8 +16,8 @@ const apiClient = axios.create({
       return allProducts;
   
     },
-    async getProduct(id) {
-      let response = await apiClient.get("/Product/GetAll/" + id);
+    async getProductById(id) {
+      let response = await apiClient.get("/Product/GetProductById=" + id);
       let product = response.data;
       return product;
   },

@@ -1,11 +1,20 @@
-
-// import { LockClosedIcon } from '@heroicons/react/20/solid'
+import Modal from "./Modal";
+import Forgot from "./Forgot";
+import React, { Fragment } from "react";
+import { useState } from "react";
 
 export default function Registration() {
+  const [showModal, setShowModal] = useState(false); 
+
+  // const handleForgotPassword = () => {
+  //   setShowModal(true); 
+  // };
+
+  // const handleCloseModal = () => {
+  //   setShowModal(false); 
+  // };
   return (
     <>
-     
-
       <div className="flex min-h-full items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
         <div className="w-full max-w-md space-y-8">
           <div>
@@ -64,13 +73,18 @@ export default function Registration() {
                   Remember me
                 </label>
               </div>
-              <Login>
+              <Fragment>
               <div className="text-sm">
-                <a href="#" className="font-medium text-indigo-600 hover:text-indigo-500">
+                <button  onClick={() => setShowModal(true)}>
+                <a className="font-medium text-indigo-600 hover:text-indigo-500">
                   Forgot your password?
                 </a>
+                </button>
               </div>
-              </Login>
+              <Modal isVisible={showModal} onClose={() => setShowModal(false)}>
+                <Forgot/>
+              </Modal>
+              </Fragment>
             </div>
 
             <div>
