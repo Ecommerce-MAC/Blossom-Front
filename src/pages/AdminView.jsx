@@ -8,14 +8,10 @@ export default function Admin() {
      const {productsData} = useLoaderData(); 
     
 
-    // async function deleteProduct (id) {
-    //     await productHandler.deleteProduct(id)
-    //     console.log (id);
-    //   }
-    // const deleteProduct = async (id) => {
-    //     await productHandler.deleteProduct(id);
-    //     setProductsData(productsData.filter(product => product.id !== id))
-    // }  
+    async function deleteProduct (id) {
+        await productHandler.deleteProduct(id)
+        console.log (id);
+      }
 
     return ( 
         <div className="StyleTable relative overflow-x-auto shadow-md sm:rounded-lg mt-10 ml-3 mr-3">
@@ -47,13 +43,13 @@ export default function Admin() {
                             <td className="px-6 py-4 font-semibold text-gray-900 dark:text-dark">{productsData.price} </td> */}
                             <td className="px-6 py-4 font-semibold text-gray-900 dark:text-dark">{productsData.stock} </td>
                             <td className="px-6 py-4 font-semibold text-gray-900 dark:text-dark"> </td>
-                            {/* <button>
+                            <button>
                             <td className="px-6 py-4">
                             <svg className="h-8 w-8 text-red-500 dark:text-red" onClick={() => deleteProduct(productsData.id)} fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16"/>
                                 </svg>
                             </td>
-                            </button> */}
+                            </button> 
                         
 
                             <td className="px-6 py-4">

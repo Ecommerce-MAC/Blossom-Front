@@ -29,7 +29,7 @@ const apiClient = axios.create({
     },
   
     async deleteProduct(id) {
-      await apiClient.delete("/Product/Delete" + id)
+      await apiClient.delete("/Product/Delete?id=" + id)
     },
     // async updateProduct(id, updatedProduct) {
     //   await apiClient.patch("/Product/Patch" + id, updatedProduct)
