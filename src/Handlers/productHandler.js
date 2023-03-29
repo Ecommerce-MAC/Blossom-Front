@@ -11,6 +11,7 @@ export const productHandler = {
             "brand": newProduct.brand,
             "description": newProduct.description,
             "typeProduct": newProduct.typeProduct,
+            "imageURL" :newProduct.imageURL,
             "cost": newProduct.cost,
             "price": newProduct.price,
             "stock": newProduct.stock,        

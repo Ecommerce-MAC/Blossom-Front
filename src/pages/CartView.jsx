@@ -27,7 +27,7 @@ const Cart = () => {
     </div>
   )
 }
- 
+
 export default Cart
 
 // function ShoppingCart() {
