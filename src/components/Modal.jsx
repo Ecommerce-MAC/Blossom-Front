@@ -1,4 +1,5 @@
 import React from "react";
+import '../Styles/Modal.css'
 
 
 const Modal =({isVisible, onClose, children}) => {
@@ -9,7 +10,7 @@ const Modal =({isVisible, onClose, children}) => {
   }
 
   return (
-    <div className="fixed inset-0 bg-black bg-opacity-25 blackdrop-blur-sm flex justify-center items-center" id="wrapper" onClick={handleClose}>
+    <div className="fixed inset-0 bg-black bg-opacity-25 blackdrop-blur-sm flex justify-center items-center modal-wrapper" id="wrapper" onClick={handleClose}>
       <div className="w-[600px] flex flex-col">
         <button className="text-white text-xl place-self-end" onClick={() => onClose()}>X</button>
         <div className="bg-white p-2 rounded">

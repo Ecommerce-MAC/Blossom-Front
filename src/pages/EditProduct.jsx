@@ -64,7 +64,7 @@ function EditProduct() {
         <>
           <form className="StyleForm mt-9 p-5" onSubmit={handleSubmit}>
 
-            <h1 className=" mb-4 text-3xl"> UPLOAD PRODUCT</h1>
+            <h1 className=" mb-4 text-3xl"> EDIT PRODUCT</h1>
 
             <div className="mb-6">
               <label htmlFor="ProductName" className="block mb-2 text-sm font-medium dark:text-black">Product Name</label>

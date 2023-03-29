@@ -3,7 +3,7 @@ import '../Styles/AdminView.css'
 import { useLoaderData } from "react-router-dom";
 import { productHandler } from "../Handlers/productHandler";
 import { Link } from "react-router-dom";
-
+import Sidebar from "../components/Sidebar";
 
 
 
@@ -18,18 +18,13 @@ export default function Admin() {
     
 
     return ( 
-        <div className="StyleTable relative overflow-x-auto shadow-md sm:rounded-lg mt-10 ml-3 mr-3">
+        
          <>
                   <h1 className=" text-3xl mt-3 ml-5">Hello, "Admin"</h1>
-                  
-                  <button  className="cardbutton m-16 mt-3 mb-3 rounded-lg bg-orange px-3.5 py-2.5 text-xs font-thin shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600" onClick={() => window.location.href='/UploadProduct'}>
-                UPLOAD PRODUCT
-                 </button>
+                  <Sidebar/>
                  <table className="mt-12 w-full text-sm text-left text-gray-500 dark:text-gray-400">
-
                     <thead className="text-m text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400 bg-alba">
                         <tr>
-                               <th scope="col" className="px-6 py-3 font-medium text-gray-900"> <span className="sr-only">Image</span>  Image</th>
                                <th scope="col" className="px-6 py-3 font-medium text-gray-900">Id</th>
                                 <th scope="col" className="px-6 py-3 font-medium text-gray-900">Name</th>
                                 <th scope="col" className="px-6 py-3 font-medium text-gray-900">Type Product</th>
@@ -42,7 +37,6 @@ export default function Admin() {
                     <tbody>
                         <tr className="bg-white border-b-2 dark:bg-gray-800 dark:border-alba hover:bg-gray-50 dark:hover:bg-gray-600">
 
-                            <td className="w-32 p-4"><img src="" alt=""/></td>
                             <td className="px-6 py-4 font-semibold text-gray-900 dark:text-dark">{productsData.id} </td>
                             <td className="px-6 py-4 font-semibold text-gray-900 dark:text-dark"> {productsData.name}</td>
                             <td className="px-6 py-4 font-semibold text-gray-900 dark:text-dark"> {productsData.typeProduct}</td>
@@ -73,7 +67,7 @@ export default function Admin() {
                     ))}
                 </table>
         </>
-        </div>
+        
     )
  } 
       

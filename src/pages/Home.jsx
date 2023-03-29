@@ -1,7 +1,6 @@
 import React, {useEffect, useState} from "react";
-import Slide from "../components/Slide"
-import { allProducts } from "../Functions/ProductServices";
-
+ import Slide from "../components/Slide"
+import Carrousel from "../components/Carrousel";
 
 
 function Home() {
@@ -12,6 +11,7 @@ function Home() {
 
     return (
         <div>
+            <Carrousel/>
            <Slide/>
            <div className="contenedor" > 
 
