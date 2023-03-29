@@ -43,7 +43,7 @@ export default function Navbar ()  {
 
         <Fragment>
         <div>
-           <button className= "text-green bg-blue-700 hover:bg-pink" onClick={() => setShowModal(true)}>
+           <button className= "text-black bg-blue-70" onClick={() => setShowModal(true)}>
             Login
            </button>
         </div>
@@ -54,9 +54,7 @@ export default function Navbar ()  {
         <button className="text-green-500 bg-blue-700 hover:bg-pink-500 px-4 py-2 rounded" onClick={() => window.location.href='/CartView'}>
         Cart
       </button>
-      <button className="text-green-500 bg-blue-700 hover:bg-pink-500 px-4 py-2 rounded" onClick={() => window.location.href='/UploadProduct'}>
-        Upload
-      </button>
+      
       <button className="text-green-500 bg-blue-700 hover:bg-pink-500 px-4 py-2 rounded" onClick={() => window.location.href='/AdminView'}>
         Admin
       </button>

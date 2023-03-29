@@ -21,8 +21,10 @@ export default function Admin() {
         <div className="StyleTable relative overflow-x-auto shadow-md sm:rounded-lg mt-10 ml-3 mr-3">
          <>
                   <h1 className=" text-3xl mt-3 ml-5">Hello, "Admin"</h1>
-                  <button className="text-green-500 bg-blue-700 hover:bg-pink-500 px-4 py-2 rounded" onClick={() => window.location.href='/UploadProduct'}>  Upload </button>
-                 
+                  
+                  <button  className="cardbutton m-16 mt-3 mb-3 rounded-lg bg-orange px-3.5 py-2.5 text-xs font-thin shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600" onClick={() => window.location.href='/UploadProduct'}>
+                UPLOAD PRODUCT
+                 </button>
                  <table className="mt-12 w-full text-sm text-left text-gray-500 dark:text-gray-400">
 
                     <thead className="text-m text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400 bg-alba">
