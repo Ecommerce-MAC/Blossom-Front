@@ -29,17 +29,17 @@ const addToCart = async (product) => {
             if (product.typeProduct == params.productType) {
               return ( 
                 <a key={product.id} href={product.href} className="group">
-              { <div className="aspect-w-1 aspect-h-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-w-7 xl:aspect-h-8">
+               <div className="aspect-w-1 aspect-h-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-w-7 xl:aspect-h-8">
                 <img
                   src={product.imageUrl}
                   alt={product.imageAlt}
                   className="h-full w-full object-cover object-center group-hover:opacity-75"
                 />
-              </div>  }
-              <h3 className="mt-4 text-sm text-gray-700">{product.name}</h3>
-              <h3 className="mt-4 text-sm text-gray-700">{product.typeProduct}</h3>
-              <p className="mt-1 text-lg font-medium text-gray-900">{product.price}</p>
-              <button  className="block w-full rounded-md bg px-3.5 py-2.5 text-center text-sm font-semibold text-dark shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600" onClick={() => addToCart(product)}>
+              </div>  
+              <h3 className="mt-4 font-semibold text-lg mr-2 ml-2 text-center text-gray-700">{product.name}</h3>
+              <h3 className="mt-2  font-light text-sm text-center text-gray-700">{product.typeProduct}</h3>
+              <p className="mt-1 text-center font-extrabold text-gray-900">{product.price}</p>
+              <button  className=" m-16 mt-3 mb-3 rounded-lg bg-orange px-3.5 py-2.5 text-xs font-thin shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600" onClick={() => addToCart(product)}>
                 ADD TO CART
               </button>
             </a> 
