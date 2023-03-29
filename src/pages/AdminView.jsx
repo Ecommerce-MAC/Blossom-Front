@@ -30,10 +30,10 @@ export default function Admin() {
                                <th scope="col" className="px-6 py-3 font-medium text-gray-900"> <span className="sr-only">Image</span>  Image</th>
                                <th scope="col" className="px-6 py-3 font-medium text-gray-900">Id</th>
                                 <th scope="col" className="px-6 py-3 font-medium text-gray-900">Name</th>
-                                {/* <th scope="col" className="px-6 py-3 font-medium text-gray-900">Type Product</th>
-                                <th scope="col" className="px-6 py-3 font-medium text-gray-900">Price</th> */}
+                                <th scope="col" className="px-6 py-3 font-medium text-gray-900">Type Product</th>
+                                <th scope="col" className="px-6 py-3 font-medium text-gray-900">Price</th> 
                                 <th scope="col" className="px-6 py-3 font-medium text-gray-900">Stock</th>
-                                <th scope="col" className="px-6 py-3 font-medium text-gray-900"></th>
+                                <th scope="col" className="px-6 py-3 font-medium text-gray-900">Remove</th>
                         </tr>
                     </thead>
                  {productsData.map((productsData) => (
@@ -43,8 +43,8 @@ export default function Admin() {
                             <td className="w-32 p-4"><img src="" alt=""/></td>
                             <td className="px-6 py-4 font-semibold text-gray-900 dark:text-dark">{productsData.id} </td>
                             <td className="px-6 py-4 font-semibold text-gray-900 dark:text-dark"> {productsData.name}</td>
-                            {/* <td className="px-6 py-4 font-semibold text-gray-900 dark:text-dark"> {productsData.typeProduct}</td>
-                            <td className="px-6 py-4 font-semibold text-gray-900 dark:text-dark">{productsData.price} </td> */}
+                            <td className="px-6 py-4 font-semibold text-gray-900 dark:text-dark"> {productsData.typeProduct}</td>
+                            <td className="px-6 py-4 font-semibold text-gray-900 dark:text-dark">{productsData.price} </td> 
                             <td className="px-6 py-4 font-semibold text-gray-900 dark:text-dark">{productsData.stock} </td>
                             <td className="px-6 py-4 font-semibold text-gray-900 dark:text-dark"> </td>
                             <button>
