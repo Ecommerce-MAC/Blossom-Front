@@ -3,7 +3,7 @@ import '../Styles/AdminView.css'
 import { useLoaderData } from "react-router-dom";
 import { productHandler } from "../Handlers/productHandler";
 import { Link } from "react-router-dom";
-import EditProduct from "./EditProduct";
+
 
 
 
@@ -15,10 +15,7 @@ export default function Admin() {
         await productHandler.deleteProduct(id)
         console.log (id);
       }
-    async function updateProduct (id, updatedProduct) {
-        await productHandler.updateProduct(id, updatedProduct)
-        console.log (id);
-      }
+    
 
     return ( 
         <div className="StyleTable relative overflow-x-auto shadow-md sm:rounded-lg mt-10 ml-3 mr-3">

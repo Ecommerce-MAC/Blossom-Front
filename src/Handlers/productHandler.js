@@ -23,12 +23,12 @@ export const productHandler = {
         return productService.deleteProduct(id);
     },
     
-    updateProduct(id, updatedProduct){
-        if(!updatedProduct){
+    updateProduct(updateProduct){
+        if(!updateProduct){
             return;
         }
-        let updatedProductStructure = {
-            "id": "",
+        let updateProductStructure = {
+            "id": updateProduct.id,
             "name": updateProduct.name,
             "brand": updateProduct.brand,
             "typeProduct": updateProduct.typeProduct,
@@ -38,6 +38,10 @@ export const productHandler = {
             "stock": updateProduct.stock,        
 
         }
-        return productService.updateProduct(id, updatedProductStructure);
-    }
+        return productService.updateProduct(updateProductStructure);
+    },
+
+    loadProduct(id) {
+        return productService.getProductById(id);
+    },
 }

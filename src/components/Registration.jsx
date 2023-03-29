@@ -1,11 +1,20 @@
+import Modal from "./Modal";
+import Forgot from "./Forgot";
+import React, { Fragment } from "react";
+import { useState } from "react";
 
-// import { LockClosedIcon } from '@heroicons/react/20/solid'
+export default function Registration() {
+  const [showModal, setShowModal] = useState(false); 
 
-export default function Example() {
+  // const handleForgotPassword = () => {
+  //   setShowModal(true); 
+  // };
+
+  // const handleCloseModal = () => {
+  //   setShowModal(false); 
+  // };
   return (
     <>
-     
-
       <div className="flex min-h-full items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
         <div className="w-full max-w-md space-y-8">
           <div>
@@ -64,18 +73,24 @@ export default function Example() {
                   Remember me
                 </label>
               </div>
-
+              <Fragment>
               <div className="text-sm">
-                <a href="#" className="font-medium text-indigo-600 hover:text-indigo-500">
+                <button  onClick={() => setShowModal(true)}>
+                <a className="font-medium text-indigo-600 hover:text-indigo-500">
                   Forgot your password?
                 </a>
+                </button>
               </div>
+              <Modal isVisible={showModal} onClose={() => setShowModal(false)}>
+                <Forgot/>
+              </Modal>
+              </Fragment>
             </div>
 
             <div>
               <button type="submit"className="w-full text-dark bg-blue-700 hover:bg-blue-800 focus:ring-4 focus: outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text center">
                 <span className="absolute inset-y-0 left-0 flex items-center pl-3">
-                   {/* <LockClosedIcon className="h-5 w-5 text-indigo-500 group-hover:text-indigo-400" aria-hidden="true" /> */}
+                  
                 </span> 
                 Sign in
               </button>
