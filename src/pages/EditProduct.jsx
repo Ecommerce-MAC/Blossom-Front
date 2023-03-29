@@ -54,14 +54,11 @@ function EditProduct() {
 
     const handleSubmit = (event) => {
         event.preventDefault();
-        let updatedProduct = {name, brand, typeProduct, description, price, cost, stock, image};
-        productHandler.updateProduct(id, updatedProduct);
+        let updateProduct = {id, name, brand, typeProduct, description, price, cost, stock};
+         productHandler.updateProduct(updateProduct);
+        
     };
 
-    async function updateProduct (id, updatedProduct) {
-      await productHandler.updateProduct(id, updatedProduct)
-      console.log (id);
-    }
 
     return (
         <>
@@ -112,8 +109,6 @@ function EditProduct() {
 
             <button type="submit" className="text-dark  border  bg-orange border-dark bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">SAVE</button>
 
-              {/* boton equis que confirma el envio del formulario y llama a updateproduct con 
-              su id y si productdata */}
 
             </form>  
         </>
