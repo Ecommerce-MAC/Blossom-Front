@@ -8,7 +8,6 @@ import ProductList from "../pages/ProductList";
 import UploadProduct from "../pages/UploadProduct";
 import AdminView from "../pages/AdminView";
 import NotFound from "../pages/NotFound";
-import FrequentlyQuestions from "../pages/FrequentlyQuestions";
 import { productService } from "../Service/productService";
 
 
@@ -32,7 +31,8 @@ export const router = createBrowserRouter([
                     },
                     {
                         path: "/CartView",
-                        element: <CartView/>,                     
+                        element: <CartView/>,
+                       
 
                     },
                   
@@ -52,12 +52,6 @@ export const router = createBrowserRouter([
                         loader: fetchProduct,   
 
                     },
-                    {
-                        path: '/FrequentlyQuestions',
-                        element: <FrequentlyQuestions/>,
-                        loader: fetchProducts,
-                    },
-                    
                 ]
             },
 
