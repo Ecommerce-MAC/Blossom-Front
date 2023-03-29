@@ -5,6 +5,7 @@ import React from "react";
 export default function ProductList() {
   const {productsData, params} = useLoaderData ()
   const cartProducts = JSON.parse(localStorage.getItem("cartProducts")) || [];
+ 
 
 
   console.log (params)
@@ -13,6 +14,7 @@ const addToCart = async (product) => {
     console.log("cart product array", cartProducts);
     cartProducts.push(product);
     localStorage.setItem("cartProducts", JSON.stringify(cartProducts));
+
   }
 
 

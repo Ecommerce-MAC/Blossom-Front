@@ -1,6 +1,6 @@
 
 import React, { Fragment } from "react";
-import Login from "./Login"
+import Modal from "./Modal"
 import Registration from "./Registration"
 import { useState } from "react";
 
@@ -47,9 +47,9 @@ export default function Navbar ()  {
             Login
            </button>
         </div>
-        <Login isVisible={showModal} onClose={() => setShowModal(false)}>         
+        <Modal isVisible={showModal} onClose={() => setShowModal(false)}>         
           <Registration/>
-        </Login>
+        </Modal>
         </Fragment>
         <button className="text-green-500 bg-blue-700 hover:bg-pink-500 px-4 py-2 rounded" onClick={() => window.location.href='/CartView'}>
         Cart

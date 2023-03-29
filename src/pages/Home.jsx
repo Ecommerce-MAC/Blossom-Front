@@ -9,9 +9,7 @@ function Home() {
 
     const [products, allProducts] =useState(null)
 
-    useEffect(() =>{
-        allProducts(allProducts)
-    }, [])
+    useEffect(() =>{allProducts(allProducts) }, [])
 
     return (
         <div>

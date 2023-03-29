@@ -9,7 +9,6 @@ export const productHandler = {
 
             "name": newProduct.name,
             "brand": newProduct.brand,
-            "description": newProduct.description,
             "typeProduct": newProduct.typeProduct,
             "imageURL" :newProduct.imageURL,
             "cost": newProduct.cost,
@@ -23,21 +22,26 @@ export const productHandler = {
     deleteProduct(id){
         return productService.deleteProduct(id);
     },
-    // updateProduct(id, updatedProduct){
-    //     if(!updatedProduct){
-    //         return;
-    //     }
-    //     let updatedProductStructure = {
-    //         "id": "",
-    //         "name": updateProduct.name,
-    //         "brand": updateProduct.brand,
-    //         "description": updateProduct.description,
-    //         "typeProduct": updateProduct.typeProduct,
-    //         "price": updateProduct.price,
-    //         "cost": updateProduct.cost,
-    //         "stock": updateProduct.stock,        
+    
+    updateProduct(updateProduct){
+        if(!updateProduct){
+            return;
+        }
+        let updateProductStructure = {
+            "id": updateProduct.id,
+            "name": updateProduct.name,
+            "brand": updateProduct.brand,
+            "typeProduct": updateProduct.typeProduct,
+            "description": updateProduct.description,
+            "price": updateProduct.price,
+            "cost": updateProduct.cost,
+            "stock": updateProduct.stock,        
 
-    //     }
-    //     return productService.updateProduct(id, updatedProductStructure);
-    // }
+        }
+        return productService.updateProduct(updateProductStructure);
+    },
+
+    loadProduct(id) {
+        return productService.getProductById(id);
+    },
 }
