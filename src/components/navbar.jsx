@@ -58,12 +58,6 @@ export default function Navbar ()  {
              shopping_cart
             </span>
         </button>
-      <button className=".material-symbols-outlined text-green-500 bg-blue-700 hover:bg-pink-500 px-4 py-2 rounded" onClick={() => window.location.href='/UploadProduct'}>
-        Upload
-      </button>
-      <button className="text-green-500 bg-blue-700 hover:bg-pink-500 px-4 py-2 rounded" onClick={() => window.location.href='/AdminView'}>
-        Admin
-      </button>
       </div>
 
     </nav>

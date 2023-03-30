@@ -1,10 +1,8 @@
-import Modal from "./Modal";
-import Forgot from "./Forgot";
-import React, { Fragment } from "react";
-import { useState } from "react";
+import React from "react";
+
 
 export default function Registration() {
-  const [showModal, setShowModal] = useState(false); 
+  
 
   return (
     <>
@@ -45,18 +43,6 @@ export default function Registration() {
                   Remember me
                 </label>
               </div>
-              <Fragment>
-              <div className="text-sm">
-                <button  onClick={() => setShowModal(true)}>
-                <a className="font-medium text-indigo-600 hover:text-indigo-500">
-                  Forgot your password?
-                </a>
-                </button>
-              </div>
-              <Modal isVisible={showModal} onClose={() => setShowModal(false)}>
-                <Forgot/>
-              </Modal>
-              </Fragment>
             </div>
 
             <div>
