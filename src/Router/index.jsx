@@ -31,6 +31,11 @@ export const router = createBrowserRouter([
                         loader: fetchProducts,
                     },
                     {
+                        path: '/AdminView/:productType',
+                        element: <AdminView/>,
+                        loader: fetchProducts,
+                    },
+                    {
                         path: "/CartView",
                         element: <CartView/>,                     
 

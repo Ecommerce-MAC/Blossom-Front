@@ -7,8 +7,9 @@ import Sidebar from "../components/Sidebar";
 
 
 
+
 export default function Admin() {
-     const {productsData} = useLoaderData(); 
+     const {productsData, params} = useLoaderData(); 
     
 
     async function deleteProduct (id) {
@@ -21,7 +22,7 @@ export default function Admin() {
         
          <>
                   <h1 className=" text-3xl mt-3 ml-5">Hello, "Admin"</h1>
-                  <Sidebar/>
+                  <Sidebar></Sidebar>
                  <table className="mt-12 w-full text-sm text-left text-gray-500 dark:text-gray-400">
                     <thead className="text-m text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400 bg-alba">
                         <tr>
@@ -32,9 +33,12 @@ export default function Admin() {
                                 <th scope="col" className="px-6 py-3 font-medium text-gray-900">Stock</th>
                                 <th scope="col" className="px-6 py-3 font-medium text-gray-900">Remove</th>
                         </tr>
-                    </thead>
-                 {productsData.map((productsData) => (
-                    <tbody>
+                    </thead> 
+                 {productsData.map((productsData) => {
+                    if(Object.keys(params).length == 0 || productsData.typeProduct == params.productType) {
+                        return (
+                           
+                           <tbody>
                         <tr className="bg-white border-b-2 dark:bg-gray-800 dark:border-alba hover:bg-gray-50 dark:hover:bg-gray-600">
 
                             <td className="px-6 py-4 font-semibold text-gray-900 dark:text-dark">{productsData.id} </td>
@@ -61,10 +65,11 @@ export default function Admin() {
                             
 
                         </tr>
-                    </tbody>
+                    </tbody> 
+                        )
+                    }
                   
-                  
-                    ))}
+                 })}
                 </table>
         </>
         
