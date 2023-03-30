@@ -12,16 +12,16 @@ function EditProduct() {
     const [price, setPrice] = useState(product.price);
     const [cost, setCost] = useState(product.cost);
     const [stock, setStock] = useState(product.stock);
-    // const [image, setImage] = useState(product.image);
+    const [image, setImage] = useState(product.image);
 
-    // const handleImageChange = (event) => {
-    //     const file = event.target.files[0];
-    //     const reader = new FileReader();
-    //     reader.readAsDataURL(file);
-    //     reader.onload = () => {
-    //         setImage(reader.result);
-    //     };
-    // };
+    const handleImageChange = (event) => {
+        const file = event.target.files[0];
+        const reader = new FileReader();
+        reader.readAsDataURL(file);
+        reader.onload = () => {
+            setImage(reader.result);
+        };
+    };
 
     const handleNameChange = (event) => {
         let nameInput = event.target.value;
