@@ -1,13 +1,13 @@
 import React from 'react'
-import baner from "../assets/Img-baner/baner.png"
+import baner2 from "../assets/Img-baner/baner2.png"
 
-export const Baner = () => {
+export const Banner = () => {
   return (
     <div>
-        <div className="w-full pt-4">
+        <div className="w-full pt-2">
         <img
               className=""
-              src={baner}
+              src={baner2}
               alt="Transistor"
               width={2000}
             />

@@ -9,7 +9,7 @@ import slide5 from "../assets/img-slide/slide5.png"
 
 const Slide =() => {
     return (
-        <div className="pt-2"> 
+        <div className="pt-4"> 
             <Carousel>
       <Carousel.Item>
         <img
