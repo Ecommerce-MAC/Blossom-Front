@@ -3,6 +3,8 @@ import Slide from "../components/Slide"
 import { allProducts } from "../Functions/ProductServices";
 import { Baner } from "../components/Baner";
 import { Content } from "../components/Content";
+import { Cards } from "../components/Cards";
+import { Banner } from "../components/Banerr";
 
 
 
@@ -19,6 +21,8 @@ function Home() {
            <div className="contenedor" > 
 
                 <Baner />
+                <Cards/>
+                <Banner/>
                <Content/>
                 </div>
           
