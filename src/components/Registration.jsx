@@ -1,10 +1,8 @@
-import Modal from "./Modal";
-import Forgot from "./Forgot";
-import React, { Fragment } from "react";
-import { useState } from "react";
+import React from "react";
+
 
 export default function Registration() {
-  const [showModal, setShowModal] = useState(false); 
+  
 
   return (
     <>
@@ -21,7 +19,7 @@ export default function Registration() {
             </h2>
           </div>
           
-          <form className="space-y-6" action="#" method="POST">
+          <form className="space-y-6" method="POST">
             <input type="hidden" name="remember" defaultValue="true" />
             <div className="-space-y-px rounded-md shadow-sm">
               <div>
@@ -45,18 +43,6 @@ export default function Registration() {
                   Remember me
                 </label>
               </div>
-              <Fragment>
-              <div className="text-sm">
-                <button  onClick={() => setShowModal(true)}>
-                <a className="font-medium text-indigo-600 hover:text-indigo-500">
-                  Forgot your password?
-                </a>
-                </button>
-              </div>
-              <Modal isVisible={showModal} onClose={() => setShowModal(false)}>
-                <Forgot/>
-              </Modal>
-              </Fragment>
             </div>
 
             <div>
@@ -68,15 +54,15 @@ export default function Registration() {
               </button>
               <div className="text-sm font-medium text-gray-500">
               Not registered?
-                <a href="#" className="font-medium text-indigo-600 hover:text-pink-500">
+                <a  className="font-medium text-indigo-600 hover:text-pink-500">
                   Create account
                 </a>
               </div>
-            </div>
-            <button className="text-green-500 bg-blue-700 hover:bg-pink-500 px-4 py-2 rounded" onClick={() => window.location.href='/AdminView'}>
-            Admin
-          </button>   
+            </div>  
           </form>
+          <button className="ml-16 mb-10 w-36 mt-3 rounded-md bg-blue-500 py-1.5 bg-orange font-medium text-blue-50 hover:bg-blue-600" onClick={() => window.location.href='/AdminView'}>
+            Admin
+          </button> 
         </div>
       </div>
     </>

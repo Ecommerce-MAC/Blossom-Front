@@ -20,7 +20,7 @@ const Cart = () => {
           <>
           
           <div className="boxes justify-between mt-10 mb-10 mr-20 ml-16 bg-white p-6 sm:flex sm:justify-start">
-          {/* <img src= /> */}
+          
           <div className=" mb-3 sm:ml-4 sm:flex sm:w-full sm:justify-between">
             <div className="mt-3 sm:mt-0">
               <h2 className="text-lg font-bold text-gray-900">{product.name}</h2>
@@ -30,9 +30,6 @@ const Cart = () => {
         
               <div className="flex items-center space-x-4">
                 <p className="text-sm">{product.price}</p>
-                {/* <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="h-5 w-5 cursor-pointer duration-150 hover:text-red-500">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-                </svg> */}
               </div>
             </div>
           </div>

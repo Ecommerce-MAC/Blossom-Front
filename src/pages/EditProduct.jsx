@@ -86,10 +86,10 @@ function EditProduct() {
               <input type="text" id="Description" onChange={handleDescriptionChange} className="shadow-sm bg-gray-50 border-gray-300 border text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-dark dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light" placeholder={product.description} required />
             </div>
 
-            {/* <div className="mb-6">
+             <div className="mb-6">
                 <label htmlFor="Image" className="block mb-2 text-sm font-medium dark:text-black">Image</label>
                 <input type="file" id="Image" onChange={handleImageChange} accept="image/*" className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-dark dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light" placeholder={product.image}required />
-              </div>  */}
+              </div>  
 
 
             <div className="mb-6">
