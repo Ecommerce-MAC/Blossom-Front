@@ -12,16 +12,16 @@ function EditProduct() {
     const [price, setPrice] = useState(product.price);
     const [cost, setCost] = useState(product.cost);
     const [stock, setStock] = useState(product.stock);
-    // const [image, setImage] = useState(product.image);
+    const [image, setImage] = useState(product.image);
 
-    // const handleImageChange = (event) => {
-    //     const file = event.target.files[0];
-    //     const reader = new FileReader();
-    //     reader.readAsDataURL(file);
-    //     reader.onload = () => {
-    //         setImage(reader.result);
-    //     };
-    // };
+    const handleImageChange = (event) => {
+        const file = event.target.files[0];
+        const reader = new FileReader();
+        reader.readAsDataURL(file);
+        reader.onload = () => {
+            setImage(reader.result);
+        };
+    };
 
     const handleNameChange = (event) => {
         let nameInput = event.target.value;
@@ -64,7 +64,7 @@ function EditProduct() {
         <>
           <form className="StyleForm mt-9 p-5" onSubmit={handleSubmit}>
 
-            <h1 className=" mb-4 text-3xl"> UPLOAD PRODUCT</h1>
+            <h1 className=" mb-4 text-3xl"> EDIT PRODUCT</h1>
 
             <div className="mb-6">
               <label htmlFor="ProductName" className="block mb-2 text-sm font-medium dark:text-black">Product Name</label>
@@ -86,10 +86,10 @@ function EditProduct() {
               <input type="text" id="Description" onChange={handleDescriptionChange} className="shadow-sm bg-gray-50 border-gray-300 border text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-dark dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light" placeholder={product.description} required />
             </div>
 
-            {/* <div className="mb-6">
+             <div className="mb-6">
                 <label htmlFor="Image" className="block mb-2 text-sm font-medium dark:text-black">Image</label>
                 <input type="file" id="Image" onChange={handleImageChange} accept="image/*" className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-dark dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light" placeholder={product.image}required />
-              </div>  */}
+              </div>  
 
 
             <div className="mb-6">

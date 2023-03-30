@@ -4,7 +4,7 @@ import React from "react";
 import { productHandler } from "../Handlers/productHandler";
 
 function UploadProduct() {
-  // const [previewImage, setPreviewImage] = useState(null);
+  const [imageUrl, setPreviewImage] = useState('');
   const [name, setName] = useState('');
   const [brand, setBrand] = useState('');
   const [description, setDescription] = useState('');
@@ -13,18 +13,18 @@ function UploadProduct() {
   const [cost, setCost] = useState('');
   const [stock, setStock] = useState('');
 
-  // const handleImageChange = (e) => {
-  //   const selectedImage = e.target.files[0];
-  //   const imageReader = new FileReader();
+  const handleImageChange = (e) => {
+    const selectedImage = e.target.files[0];
+    const imageReader = new FileReader();
 
-  //   imageReader.onload = () => {
-  //     setPreviewImage(imageReader.result);
-  //   };
+    imageReader.onload = () => {
+      setPreviewImage(imageReader.result);
+    };
 
-  //   if (selectedImage) {
-  //     imageReader.readAsDataURL(selectedImage);
-  //   }
-  // };
+    if (selectedImage) {
+      imageReader.readAsDataURL(selectedImage);
+    }
+  };
   const handleNameChange = (event) => {
     setName(event.target.value);
   };
@@ -49,33 +49,12 @@ function UploadProduct() {
   
   const handleSubmit = (event) => {
     event.preventDefault();
-    let newProduct = { name, brand, typeProduct, description, price, cost, stock };
+    let newProduct = { name, brand, typeProduct, imageUrl, description, price, cost, stock };
 
     productHandler.addProduct(newProduct);
   }
 
   return (
-
-    // const baseURL = "https://jsonplaceholder.typicode.com/posts/1";
-
-    // export default function App() {
-    //   const [post, setPost] = React.useState(null);
-
-    //   React.useEffect(() => {
-    //     axios.get(baseURL).then((response) => {
-    //       setPost(response.data);
-    //     });
-    //   }, []);
-
-    //   if (!post) return null;
-
-    //   return (
-    //     <div>
-    //       <h1>{post.title}</h1>
-    //       <p>{post.body}</p>
-    //     </div>
-    //   );
-    // }
 
     <form className="StyleForm mt-9 p-5" onSubmit={handleSubmit}>
 
@@ -101,10 +80,10 @@ function UploadProduct() {
         <input type="text" id="Description" onChange={handleDescriptionChange} className="shadow-sm bg-gray-50 border-gray-300 border text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-dark dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light" placeholder="The product is..." required />
       </div>
 
-      {/* <div className="mb-6">
+      <div className="mb-6">
           <label htmlFor="Image" className="block mb-2 text-sm font-medium dark:text-black">Image</label>
-          <input type="file" id="Image" onChange={handleNameChange} accept="image/*" className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-dark dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light" placeholder="The product is..." required />
-        </div>  */}
+          <input type="file" id="Image" onChange={handleImageChange} accept="image/*" className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-dark dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light" placeholder="The product is..." required />
+        </div> 
 
 
       <div className="mb-6">

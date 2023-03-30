@@ -6,12 +6,7 @@ import "../Styles/ProductList.css";
 export default function ProductList() {
   const {productsData, params} = useLoaderData ()
   const cartProducts = JSON.parse(localStorage.getItem("cartProducts")) || [];
- 
-
-
-  console.log (params)
- 
-const addToCart = async (product) => {
+  const addToCart = async (product) => {
     console.log("cart product array", cartProducts);
     cartProducts.push(product);
     localStorage.setItem("cartProducts", JSON.stringify(cartProducts));
@@ -30,13 +25,13 @@ const addToCart = async (product) => {
               return ( 
                 
                 <a key={product.id} href={product.href} className="bg-List">
-              {/* <div className="aspect-w-1 aspect-h-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-w-7 xl:aspect-h-8">
+              <div className="aspect-w-1 aspect-h-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-w-7 xl:aspect-h-8">
                 <img
-                  src={product.imageSrc}
-                  alt={product.imageAlt}
+                  src={product.imageUrl}
+                  alt={product.imageUrl}
                   className="h-full w-full object-cover object-center group-hover:opacity-75"
                 />
-              </div>  */}
+              </div> 
               <h3 className="mt-4 font-semibold text-lg mr-2 ml-2 text-center text-gray-700">{product.name}</h3>
               <h3 className="mt-2  font-light text-sm text-center text-gray-700">{product.typeProduct}</h3>
               <p className="mt-1 text-center font-extrabold text-gray-900">{product.price}</p>
