@@ -28,6 +28,7 @@ const addToCart = async (product) => {
           {productsData.map((product) => {
             if (product.typeProduct == params.productType) {
               return ( 
+                
                 <a key={product.id} href={product.href} className="bg-List">
               {/* <div className="aspect-w-1 aspect-h-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-w-7 xl:aspect-h-8">
                 <img
