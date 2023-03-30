@@ -56,7 +56,7 @@ export default function Nav() {
                             }`}
                     >
 
-                        <div className=" space-y-8 md:flex md:space-x-6 md:space-y-0 text-white gap-20 text-lg font-light">
+                        <div className=" space-y-8 md:flex md:space-x-6 mt-3 md:space-y-0 text-white gap-20 text-lg font-light">
                             <Link to= "/"> Home </Link>
                             <Link to= "/ProductList/Cosmetics"> Cosmetics </Link>
                             <Link to= "/ProductList/Soap"> Soaps </Link>

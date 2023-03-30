@@ -6,10 +6,8 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: center;
-     
-
 }
 
-.cardbutton {
+.colorButton {
     color: white;
 }
