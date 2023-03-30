@@ -14,6 +14,7 @@ module.exports = {
       'green': '#008000',
       'pink': '#F7CEE0' ,
       'List': '#FFFAFA',
+      'gris': '#A79A9A',
 
       
     },

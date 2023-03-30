@@ -39,7 +39,7 @@ const addToCart = async (product) => {
               <h3 className="mt-4 font-semibold text-lg mr-2 ml-2 text-center text-gray-700">{product.name}</h3>
               <h3 className="mt-2  font-light text-sm text-center text-gray-700">{product.typeProduct}</h3>
               <p className="mt-1 text-center font-extrabold text-gray-900">{product.price}</p>
-              <button  className=" cardbutton m-16 mt-3 mb-3 rounded-lg bg-orange px-3.5 py-2.5 text-xs font-thin shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600" onClick={() => addToCart(product)}>
+              <button  className=" colorButton m-16 mt-3 mb-3 rounded-lg bg-orange px-3.5 py-2.5 text-xs font-thin shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600" onClick={() => addToCart(product)}>
                 ADD TO CART
               </button>
             </a> 

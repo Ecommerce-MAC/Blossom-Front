@@ -3,7 +3,7 @@ import React, { Fragment } from "react";
 import Modal from "./Modal"
 import Registration from "./Registration"
 import { useState } from "react";
-
+import "../Styles/Navbar.css";
 export default function Navbar ()  {
   const [showModal, setShowModal] = useState(false);
 
@@ -43,8 +43,10 @@ export default function Navbar ()  {
 
         <Fragment>
         <div>
-           <button className= "text-green bg-blue-700 hover:bg-pink" onClick={() => setShowModal(true)}>
-            Login
+           <button className= "text-dark bg-blue-700 hover:bg-pink" onClick={() => setShowModal(true)}>
+              <span className="material-symbols-outlined">
+                account_circle
+              </span>
            </button>
         </div>
         <Modal isVisible={showModal} onClose={() => setShowModal(false)}>         
@@ -52,9 +54,11 @@ export default function Navbar ()  {
         </Modal>
         </Fragment>
         <button className="text-green-500 bg-blue-700 hover:bg-pink-500 px-4 py-2 rounded" onClick={() => window.location.href='/CartView'}>
-        Cart
-      </button>
-      <button className="text-green-500 bg-blue-700 hover:bg-pink-500 px-4 py-2 rounded" onClick={() => window.location.href='/UploadProduct'}>
+            <span className="material-symbols-outlined">
+             shopping_cart
+            </span>
+        </button>
+      <button className=".material-symbols-outlined text-green-500 bg-blue-700 hover:bg-pink-500 px-4 py-2 rounded" onClick={() => window.location.href='/UploadProduct'}>
         Upload
       </button>
       <button className="text-green-500 bg-blue-700 hover:bg-pink-500 px-4 py-2 rounded" onClick={() => window.location.href='/AdminView'}>
