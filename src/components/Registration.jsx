@@ -101,6 +101,9 @@ export default function Registration() {
                 </a>
               </div>
             </div>
+            <button className="text-green-500 bg-blue-700 hover:bg-pink-500 px-4 py-2 rounded" onClick={() => window.location.href='/AdminView'}>
+            Admin
+          </button>   
           </form>
         </div>
       </div>

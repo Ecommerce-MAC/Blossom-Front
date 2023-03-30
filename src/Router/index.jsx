@@ -57,6 +57,8 @@ export const router = createBrowserRouter([
                         element: <FrequentlyQuestions/>,
                         loader: fetchProducts,
                     },
+                   
+                    
                     
                 ]
             },
