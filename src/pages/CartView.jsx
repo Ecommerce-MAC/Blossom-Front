@@ -44,8 +44,8 @@ const Cart = () => {
         )
       })}
 
-      <button className=" ml-80 mb-10 w-36 rounded-md bg-blue-500 py-1.5 bg-orange font-medium text-blue-50 hover:bg-blue-600" onClick={() => removeCartProducts()}>Clear cart</button>
-      <div className="mt-6 h-full  border bg-white p-6 md:mt-0 md:w-1/3">
+      <button className=" ml-16 mb-10 w-36 mt-3 rounded-md bg-blue-500 py-1.5 bg-orange font-medium text-blue-50 hover:bg-blue-600" onClick={() => removeCartProducts()}>Clear cart</button>
+      <div className=" ml-16 mt-6 h-full border bg-white p-6 md:mt-0 md:w-1/3">
         <div className="mb-2 flex justify-between">
           <p className="text-gray-700">Subtotal</p>
           <p className="text-gray-700">{totalPrice}</p>
