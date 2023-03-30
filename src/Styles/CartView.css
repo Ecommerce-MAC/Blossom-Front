@@ -1,0 +1,13 @@
+.boxes{
+    border-top: gray solid 1.2px;
+    border-bottom: gray solid 1.2px;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    font-family: 'Montserrat';
+}
+
+.TotalBorder {
+    border-bottom: rgba(143, 143, 143, 0.562) solid 1.2px;
+    padding-bottom: 15px;
+}
