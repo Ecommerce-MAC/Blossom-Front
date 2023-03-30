@@ -9,11 +9,11 @@ import slide6 from "../assets/img-slide/slide6.png"
 
 const Slide =() => {
     return (
-        <div>
+        <div > 
             <Carousel>
       <Carousel.Item>
         <img
-          className="d-block w-100"
+          className="d-block w-full h-full"
           src={slide1}
           alt="First slide"
         />
@@ -21,7 +21,7 @@ const Slide =() => {
       </Carousel.Item>
       <Carousel.Item>
         <img
-          className="d-block w-100"
+          className="d-block w-full h-full"
           src={slide2}
           alt="Second slide"
         />
@@ -30,7 +30,7 @@ const Slide =() => {
       </Carousel.Item>
       <Carousel.Item>
         <img
-          className="d-block w-100"
+          className="d-block w-full h-full"
           src={slide3}
           alt="Third slide"
         />
@@ -38,7 +38,7 @@ const Slide =() => {
 </Carousel.Item>
       <Carousel.Item>
         <img
-          className="d-block w-100"
+          className="d-block w-full h-full"
           src={slide4}
           alt="Second slide"
         />
@@ -46,7 +46,7 @@ const Slide =() => {
 </Carousel.Item>
       <Carousel.Item>
         <img
-          className="d-block w-100"
+          className="d-block w-full h-full"
           src={slide5}
           alt="Second slide"
         />
@@ -54,7 +54,7 @@ const Slide =() => {
 </Carousel.Item>
       <Carousel.Item>
         <img
-          className="d-block w-100"
+          className="d-block w-full h-full"
           src={slide6}
           alt="Second slide"
         />
