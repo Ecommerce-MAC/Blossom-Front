@@ -10,7 +10,7 @@ export default function Nav() {
         <nav className="w-full bg-orange ">
             <div className="justify-center px-4 mx-auto lg:max-w-7xl md:items-center md:flex  ">
                 <div>
-                    <div className="flex items-center justify-between py-3 md:py-5 md:block">
+                    <div className="flex justify-between py-3 md:py-5 md:block">
 
                          <div className="md:hidden ">
                             <button
@@ -52,16 +52,16 @@ export default function Nav() {
                 </div>
                 <div>
                     <div
-                        className={`flex-1 justify-self-center pb-3 mt-8 md:block md:pb-0 md:mt-0 ${navbar ? "block" : "hidden"
+                        className={`flex-1 justify-self-center  pt-2 pb-2 mt-8 md:block md:pb-0 md:mt-0 ${navbar ? "block" : "hidden"
                             }`}
                     >
 
-                        <div className=" space-y-8 md:flex md:space-x-6 mt-3 md:space-y-0 text-white gap-20 text-lg font-light">
-                            <Link to= "/"> Home </Link>
-                            <Link to= "/ProductList/Cosmetics"> Cosmetics </Link>
-                            <Link to= "/ProductList/Soap"> Soaps </Link>
-                            <Link to= "/ProductList/Aromatherapy"> Aromatherapy </Link> 
-                            <Link to= "/ProductList/Hair"> Hair </Link> 
+                        <div className=" space-y-8 md:flex md:space-x-6 md:space-y-0 text-white gap-20 text-xl font-light">
+                            <Link className="hover:transform hover:scale-125 transition-all" to= "/"> Home </Link>
+                            <Link className="hover:transform hover:scale-125 transition-all" to= "/ProductList/Cosmetics"> Cosmetics </Link>
+                            <Link className="hover:transform hover:scale-125 transition-all" to= "/ProductList/Soap"> Soaps </Link>
+                            <Link className="hover:transform hover:scale-125 transition-all" to= "/ProductList/Aromatherapy"> Aromatherapy </Link> 
+                            <Link className="hover:transform hover:scale-125 transition-all"to= "/ProductList/Hair"> Hair </Link> 
                            
                         </div> 
 

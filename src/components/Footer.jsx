@@ -55,8 +55,10 @@ export const Footer = () => {
         </div>
 
       </div>
+
+
       <div className="px-4 py-6 bg-orange md:flex items-center justify-between">
-        <span className="text-sm text-black sm:text-center ml-3">© 2023 <a href="">Blossom</a> | All Rights Reserved.</span>
+        <span className="text-sm text-black sm:text-center ">© 2023 Blossom | All Rights Reserved.</span>
 
         <div className="flex mt-4 space-x-6 sm:justify-center md:mt-0 mr-3">
           <a href="#" className="text-dark hover:text-gray-900 dark:hover:text-white">
@@ -82,8 +84,3 @@ export const Footer = () => {
 
   );
 };
-<div className="px-4 py-6 bg-orange-300 md:flex items-center justify-between">
-  <span className="text-sm text-black sm:text-center">© 2023 <a href="">Blossom</a> | All Rights Reserved.
-  </span>
-
-</div>

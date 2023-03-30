@@ -1,27 +1,30 @@
 import { Footer } from '../components/Footer'
-import  Navbar  from "../components/Navbar"
+import Navbar from "../components/Navbar"
 import Nav from "../components/Nav"
 
 import BrandList from "../components/BrandList"
+
 import { Outlet, useNavigation } from "react-router-dom";
 import '../index.css'
 
+
 function Root() {
-    const navigation = useNavigation()
+  const navigation = useNavigation()
   return (
     <>
-     <Navbar/>
-      <Nav/>
+      <Navbar />
+      <Nav />
+    
       <main className="container">
-                {navigation.state === "loading" && (
-                    <div className="alert alert-info my-S">Loading...</div>
-                )}
-        <Outlet/>
+        {navigation.state === "loading" && (
+          <div className="alert alert-info my-S">Loading...</div>
+        )}
+        <Outlet />
       </main>
-      
-      <BrandList/>
-      
-     <Footer/>
+       
+      <BrandList />
+
+      <Footer />
     </>
   )
 }
