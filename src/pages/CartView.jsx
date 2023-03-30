@@ -19,7 +19,7 @@ const Cart = () => {
         return (
           <>
           
-          <div className="boxes justify-between mt-10 mb-10 bg-white p-6 sm:flex sm:justify-start">
+          <div className="boxes justify-between mt-10 mb-10 mr-20 ml-16 bg-white p-6 sm:flex sm:justify-start">
           {/* <img src= /> */}
           <div className=" mb-3 sm:ml-4 sm:flex sm:w-full sm:justify-between">
             <div className="mt-3 sm:mt-0">
